@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream House</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="bg-gray-900 text-white py-4">
+      <div class="container mx-auto px-4 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="text-2xl font-bold">Logo</div>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-6">
+          <a
+            href="#"
+            class="hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+            >About</a
+          >
+          <a
+            href="#"
+            class="hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+            >Features</a
+          >
+          <a
+            href="#"
+            class="hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Social Icons -->
+        <div class="hidden md:flex space-x-4">
+          <a
+            href="#"
+            class="hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="#"
+            class="hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="#"
+            class="hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="#"
+            class="hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button
+            class="mobile-menu-button transition-transform duration-300 ease-in-out"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        class="mobile-menu mt-[25px] hidden md:hidden transition-all duration-300 ease-in-out"
+      >
+        <a
+          href="#"
+          class="block py-2 px-4 text-sm hover:bg-gray-700 hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="block py-2 px-4 text-sm hover:bg-gray-700 hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+          >About</a
+        >
+        <a
+          href="#"
+          class="block py-2 px-4 text-sm hover:bg-gray-700 hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+          >Features</a
+        >
+        <a
+          href="#"
+          class="block py-2 px-4 text-sm hover:bg-gray-700 hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+          >Pricing</a
+        >
+        <a
+          href="#"
+          class="block py-2 px-4 text-sm hover:bg-gray-700 hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+          >Blog</a
+        >
+        <a
+          href="#"
+          class="block py-2 px-4 text-sm hover:bg-gray-700 hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+          >Contact</a
+        >
+        <div class="flex justify-center space-x-4 py-2">
+          <a
+            href="#"
+            class="hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="#"
+            class="hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="#"
+            class="hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="#"
+            class="hover:text-green-300 hover:border-b-2 hover:border-white transition duration-200"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- ======> Hero Section <===== -->
+    <section
+      class="relative bg-cover bg-center h-[70vh] md:h-[calc(100vh-64px)] flex items-center"
+      style="
+        background-image: url('https://media.istockphoto.com/id/1713801218/photo/ghost-in-the-living-room-at-night.webp?a=1&b=1&s=612x612&w=0&k=20&c=RpCi-RFFcvwmoXq4xrywhRy_n351PtBb5KF7X_yQdEs=');
+      "
+    >
+      <div class="container mx-auto px-4">
+        <div class="max-w-2xl">
+          <h1
+            class="text-5xl md:text-7xl lg:text-8xl font-bold text-green-300 mb-4"
+          >
+            Dark House Center
+          </h1>
+          <p class="text-white text-lg md:text-xl mb-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="space-x-4">
+            <button
+              class="bg-green-300 text-gray-900 px-6 py-3 rounded-lg font-semibold transition duration-300 hover:bg-white hover:text-gray-900 font-bold hover:shadow-white"
+            >
+              Book
+            </button>
+            <button
+              class="bg-green-300 text-gray-900 px-6 py-3 rounded-lg font-semibold transition duration-300 hover:bg-white hover:text-gray-900 font-bold hover:shadow-white"
+            >
+              Visit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="bg-white py-16">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">
+          About Our Center
+        </h1>
+        <p class="text-sm text-gray-600 mb-12 text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="w-full md:w-1/2 mb-8 md:mb-0">
+            <img
+              src="https://media.istockphoto.com/id/540582578/photo/dramatic-storm-clouds-over-residential-neighborhood-colorado-usa.webp?a=1&b=1&s=612x612&w=0&k=20&c=KZqszQw-lJfZHiEv7ycXwNBrFM55Is0NwS2N66k6dks="
+              alt="About Us Image"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+          <div class="w-full md:w-1/2 md:pl-8">
+            <h3 class="text-2xl font-semibold mb-4">About Us</h3>
+            <p class="text-gray-700 mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <button
+              class="bg-green-200 text-gray-800 px-6 py-3 rounded-lg font-semibold transition duration-300 hover:bg-gray-800 hover:text-white"
+            >
+              Visit More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card Section -->
+    <section class="bg-gray-100 py-16">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-8">
+          Our Houses
+        </h1>
+        <p class="text-sm text-gray-600 mb-12 text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
+          <!-- Card 1 -->
+          <div
+            class="bg-white p-[14px] pb-[20px] rounded-3xl border-2 border-[#dadada] shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1300135335/photo/luxurious-bedroom-interior-at-nigh-with-messy-bed-leather-armchairs-closet-and-garden-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=wiFwUBuvn65rsXK2smQnWD-hk4CQFCdRWs6G-UnuOro="
+              alt="House 1"
+              class="w-full h-48 object-cover rounded-2xl mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">New House</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button
+              class="bg-green-200 text-gray-800 px-4 py-2 rounded-lg font-bold transition duration-300 hover:bg-gray-800 hover:text-white shadow-md hover:shadow-black"
+            >
+              Learn More
+            </button>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-white p-[14px] pb-[20px] rounded-3xl border-2 border-[#dadada] shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1483031614/photo/modern-interior-design-of-living-room-black-sofa-and-empty-mockup-wall-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=ohYw9BMs6WOt0ajHLwP2Zn401FR5vwi-96gDr4qiwjE="
+              alt="House 2"
+              class="w-full h-48 object-cover rounded-2xl mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">New House</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button
+              class="bg-green-200 text-gray-800 px-4 py-2 rounded-lg font-bold transition duration-300 hover:bg-gray-800 hover:text-white shadow-md hover:shadow-black"
+            >
+              Learn More
+            </button>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white p-[14px] pb-[20px] rounded-3xl border-2 border-[#dadada] shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1223016829/photo/beautiful-luxury-home-exterior-at-sunset-features-three-car-garage-and-manicured-lawn.webp?a=1&b=1&s=612x612&w=0&k=20&c=PdWP2eR-STOD0I-o1rF86b8pgCK-Z-D2NPCwJTPAm9k="
+              alt="House 3"
+              class="w-full h-48 object-cover rounded-2xl mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">New House</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button
+              class="bg-green-200 text-gray-800 px-4 py-2 rounded-lg font-bold transition duration-300 hover:bg-gray-800 hover:text-white shadow-md hover:shadow-black"
+            >
+              Learn More
+            </button>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-white p-[14px] pb-[20px] rounded-3xl border-2 border-[#dadada] shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <img
+              src="https://media.istockphoto.com/id/2155879397/photo/house-in-a-charming-neighborhood-with-stunning-sidewalk-landscaping.webp?a=1&b=1&s=612x612&w=0&k=20&c=LlqEpFyrJBmSZ8v3CshnYJo9X00p8Y7wGv3mIDNqpZ4="
+              alt="House 4"
+              class="w-full h-48 object-cover rounded-2xl mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">New House</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button
+              class="bg-green-200 text-gray-800 px-4 py-2 rounded-lg font-bold transition duration-300 hover:bg-gray-800 hover:text-white shadow-md hover:shadow-black"
+            >
+              Learn More
+            </button>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="bg-white p-[14px] pb-[20px] rounded-3xl border-2 border-[#dadada] shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <img
+              src="https://media.istockphoto.com/id/2149088667/photo/3d-rendering-of-modern-house-in-luxurious-style-in-night.webp?a=1&b=1&s=612x612&w=0&k=20&c=J98EHiX_qM6fy_yftXedIrwlHCRBcx_gJT8HlEsFyLQ="
+              alt="House 5"
+              class="w-full h-48 object-cover rounded-2xl mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">New House</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button
+              class="bg-green-200 text-gray-800 px-4 py-2 rounded-lg font-bold transition duration-300 hover:bg-gray-800 hover:text-white shadow-md hover:shadow-black"
+            >
+              Learn More
+            </button>
+          </div>
+          <!-- Card 6 -->
+          <div
+            class="bg-white p-[14px] pb-[20px] rounded-3xl border-2 border-[#dadada] shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1990444472/photo/scandinavian-style-cozy-living-room-interior.webp?a=1&b=1&s=612x612&w=0&k=20&c=F5A3eF6myaJpITu5ABnGqNjacGWYskuxeZviU-KpxPE="
+              alt="House 6"
+              class="w-full h-48 object-cover rounded-2xl mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">New House</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button
+              class="bg-green-200 text-gray-800 px-4 py-2 rounded-lg font-bold transition duration-300 hover:bg-gray-800 hover:text-white shadow-md hover:shadow-black"
+            >
+              Learn More
+            </button>
+          </div>
+          <!-- Card 7 -->
+          <div
+            class="bg-white p-[14px] pb-[20px] rounded-3xl border-2 border-[#dadada] shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <img
+              src="https://media.istockphoto.com/id/2155879397/photo/house-in-a-charming-neighborhood-with-stunning-sidewalk-landscaping.webp?a=1&b=1&s=612x612&w=0&k=20&c=LlqEpFyrJBmSZ8v3CshnYJo9X00p8Y7wGv3mIDNqpZ4="
+              alt="House 7"
+              class="w-full h-48 object-cover rounded-2xl mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">New House</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button
+              class="bg-green-200 text-gray-800 px-4 py-2 rounded-lg font-bold transition duration-300 hover:bg-gray-800 hover:text-white shadow-md hover:shadow-black"
+            >
+              Learn More
+            </button>
+          </div>
+          <!-- Card 8 -->
+          <div
+            class="bg-white p-[14px] pb-[20px] rounded-3xl border-2 border-[#dadada] shadow-md transition duration-300 hover:shadow-lg"
+          >
+            <img
+              src="https://media.istockphoto.com/id/2093686198/photo/digitally-staged-open-concept-living-space.webp?a=1&b=1&s=612x612&w=0&k=20&c=EtS8f6Ud6MdphSv2_lkZxz8sPZ2iVrcBqbKeVrir-Ag="
+              alt="House 8"
+              class="w-full h-48 object-cover rounded-2xl mb-4"
+            />
+            <h3 class="text-xl font-semibold mb-2">New House</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button
+              class="bg-green-200 text-gray-800 px-4 py-2 rounded-lg font-bold transition duration-300 hover:bg-gray-800 hover:text-white shadow-md hover:shadow-black"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Testimonials</h2>
+        <div class="flex flex-wrap -mx-4">
+          <!-- Slider 1 -->
+          <div class="w-full md:w-1/3 px-4 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex justify-center mb-4">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="Testimonial"
+                  class="w-[100px] h-[100px] rounded-full"
+                />
+              </div>
+              <h3 class="text-xl font-semibold text-center mb-2">John Doe</h3>
+              <p class="text-gray-600 text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <!-- Slider 2 -->
+          <div class="w-full md:w-1/3 px-4 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex justify-center mb-4">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="Testimonial"
+                  class="w-[100px] h-[100px] rounded-full"
+                />
+              </div>
+              <h3 class="text-xl font-semibold text-center mb-2">John Doe</h3>
+              <p class="text-gray-600 text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris.
+              </p>
+            </div>
+          </div>
+          <!-- Slider 3 -->
+          <div class="w-full md:w-1/3 px-4 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex justify-center mb-4">
+                <img
+                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYDBAcCAf/EADwQAAEDAwICBwQIBQUBAAAAAAEAAgMEBRESIQYxEyJBUWFxgRQykaEHI0JSscHR8CQzQ4LxFTQ1U6IW/8QAGAEBAAMBAAAAAAAAAAAAAAAAAAECAwT/xAAeEQEBAAIDAQEBAQAAAAAAAAAAAQIRAyExElETBP/aAAwDAQACEQMRAD8A6qiIiRERAREQERc/+lPisWqCO10r5mVcmJHSRuDdDfPnk+iEWHiLi+1cPzsp61z3TuALo48FzWntwSP1URXfSPbIpoPZczQP94lpa5q5JS1FVWSa3zGoMnWc2U9Z/kTzK3hR0wpwSS6GQgDscw5/Dn8FS5LzF2+y36ivLSKZxbKBl0b9j6d6lFw+xXF1ur6MRyfXRyBmsdoBxuPJdot8ss9FDLUANme0F4A2U421GU02ERFZUREQEREBERAREQEREBERB9XGuLrPLfvpHrKNswY0dGXEtzpHRtXZFRZRHS8bXWqmcGh/RjU44AAjaqcl1GnHN1pw/RjRSQtHt0zXt3Ba0YBWal+jBkjJDcK95J5CMD4q1W2vppDiOoieezS8HKkairgp49c87I2d7nAfissbttlj+OZ8S8Cx2u1PqKBxmki3drO+nvCt30ePkk4Otz5XFz3B5Phh7hj5LaqK+ir6eWGnqYZyW4LWuyvfCsJp7FTxFukB0hA8C8lX472pyzUSyIi1YCIiAiIgIiICIiAiIgIiIB90+S5zJbJbtJLDI4mVukapRnUWjAOF0ZUm7F1kvweZ2FtTFqa3GPdODv34I+Cx5ZdbbcVnlQ8HBlZTye2uqjFNEWkARNaPHkrRxBw4bxFAY5C17GB2kgOycc99lBX/AIziZG+KldHNNG4AwgEg9+Vs03Gc0szWV1IaGERAiV2dWfXbG6ynfddOkpb+H5KJgmqqgyPaOqCxrdJxvjHLyUvadZiLntLQAGs62QWjO/rlQUvEcdVaxUdNGYjqHStOzsbEhWG1QGnoIGPdqcI2gn0WnHN1ly3WOq20RFu5RERAREQEREBERAREQEREBVP6SLHJdrH7RSnTVUOZWjPvsx1m/IHzCtnooTiW9W+joZ6aWpY6eZjomRRnU7JB5gch4lRfEz1QeHrxRXqlDaiOmZWM5PkYMO8D4qfbWxUFrlqbiKQiM4ZFGwEn1XPai2uZVPmopDDIc5aBkHPcF6t9ou1xcIZp9EJOC7BzjPisNT11zPKTSbsxqeML9SQFnRW6jcHzhjcA750eZwPT0XYFV7BbqezUcMVPGdLNyG7l36lWOCdk7A5uQcbtcMOHmFrhpz8u9siIiuzEREBERAREQEREBEWvXVHQRAA4fIdLUGV8scY672+QK0am5OGRAz+536LWa3RVtBJMUrTjVuQ4b/MZPoth8DcYARCGuNTWTxua6Z4B7G9UfJUq40joqjXp5HV5roFRANbB3u/JaNVbo5hpc0FqekulXioGVLBNHjI5gKdsUUQOho3HesENmmpZi6mnLWHsIzlSNvt0tO8vY4BzuZ/ZWP8APvp0Tmmu0yHta3PLB28SssYOjc75ysMNMBjWS7HxW1ybgclpjjplln9DZpGD3yR90rNHVRu2f1D4rVl9x3g1eXBrWEu5KyiT+CLQpyYdy52k7lnYFvokREQEREBERAVcv9Y+G6xkML6eNml7WjJ33yPEbemVYnOaxpc44a0ZJ7gqPS3Tpaqeeq2p55SC4/0XfYJ8CNvREJ8vbLTiWJwfjEjC05zjfbzC2ZJGuh1tOxxjCjYWup3OEDcxk7sH2D24Hrn/ADlYaasBroYGuGl2rI7tP+B8UEpUs3idjGHj9F8fEFkkILPgvbxlBriIc8L21u+/YvQ5leQ7JQZuxDyXkFfcoPkmCx3ovDnZcBttvleKmTTG4+qj4q5r43yZyBt5fvuQSMkgaADzPILeopOkpI3E5IGD6bKDa5xBfJ75Hu/dHYPNSVmlyx8ed85H5oJFEREiIiAiIg0bxJppejzvKdPkOZP771XaChDY2vc1rmuDo5YyNnsO49Qt7jSw095oWSy1FRTy0h1sfC8jUO1pHIg7LLQ0dJDSFkccUcukhpOdj2ZVcsvlfDjuTT/0+WDq00+dH8sv31N+4/w7jzChnzGk4lpmVJZFI5peG6w4kYIJP/nftVkJnDi2spnUz8Z9oj+siPmOY+Sp/GZfSXO21cwhO0jWzR76x1dt9x8SkylMuLLFdGzskaHMeHBzeYWeOQFg37FUrPdqeYdHE/JzkN5KVjr2tcGu2HeVZmlyetstZs/1rwRpwV46Yg5HotS4Oc3U8dwQSokBGcr46UY2KiIakujGSsb7hhsmppBj3cPDvQb9XODE8ZHI4UTa6GWBgMsge8DVv7keftO7z3BYaqqbKYo2HUZnaNt8gkZ+RKs9PRyyNALo4wOzn8gm5EzG1oNBxqbq0D3c83k9p/ey3aI9BPHuNzhx817noJA3LahocOWY8gfNVETcZT3yWkpLbRy0keP42TVHHv3bkkjuGfRRuJuNjoy+LzCHiJglIc/SNTm8s47F6UoEREBERBo37/h6vP8A1/oqqKV0sjny2yplDj78NWWlwxz06grXexqtFWOf1ROFB2+Omq4IXS62vY3DZGSFrh8PzWHL66uDyvNFUQtqehhrayGYD/b1w2PhkjPr+K98ScOsvtlNOB7PMwl8B5iJ+MH+07qQdSSS9SaRs9PpwGyjrNPfqGFuxiaONrA1rwO/OVXG6aZacWpqWqtE+Z52MmiOCzO+e0K5UVTHdKEvi6srRuFKcQcPRXCq9r9kImLQ1+jG+ORVcZb6my1YnhEzoycOYYXbjwOFvM5XJlhVjtdQKmiDnbOjOHBeal5me8NBDWjIz2rSozKK6V1LTzupqhmD9WWhrxy5qQNFXPc3RANOMElwU/UV+Mvxpx7ah25XiYNiuET3j6uYaHjwOykGWasc7VriOewErbksL6mBjJZhGWnOWjJT6h8ZKxaqZwv0MLjj2d79u8bYV/pzhu6jKewxQXF1cJ5HSOjDCCABt2+az1VyoqAiOsqGQuPIPOMrPK9t8MemetkDYXE/FeLE4yUJf2Pkdp8uX5KMrK+GrppHU0zZGsznQcqYs0PQWulY4EHowSPE7/mow9OWaxbiIi2c4iIgIiIPE0QmhkiP9Rpb8RhUu3Q1YiHQtyWDS5p7N1d1U7uJbXd3yR56KQa9PZ4/P8VhzY9bdH+e96bkLp2ACXWTz8lvw1YAw7bzUEb/ABSNALNzt5eqwC4tmJ0SFoPLsWX1p0fO/VsE8JblzwPVYXy02QXvbg7EkqrOklecNmaCtap1t/n1rWjuHMqfpHxP1bTW0oIALcdiwVN8ttLvNURt25A7rntwvMEIcWyyzEd3JV6qraq4PzHpjHeRkqe1bqOrDiq1OlY2GYHv2UxFWiZjXxgaSM81xCG2TMJnZUOMrftatypij4kuVBGItHStHecFTtXX6670zSx2O7cKuXepqS0OgoIbtSH32N0ukZ39Unf038FVIOO5onNMtLIADuM9iy1j21EbrvwrVyx1Tsvmt7t2v+9o+6fDkUtWkfKOntl1r4f9BcbTMyZrKimILQ5pO40nk4eS6m1uhob90Y3XO+C6Wl4gucd4qaaeOppwC+Tk2R4cMau8hdF8lrxxhzXd0IiLRiIiICIiAsFXQU1e1sdVHrDdwckEeqIovhLZemh/8zanNP8ADuBAzkSO/Vc8uFfJShxijj2lczcHkD5oipcY1wyy/UVWX+sZA50YiafAH9VAXS41lRb9b6h4627WHAPmiKMZFs7WrSVtRE0aJDp5aTuPmrHZKp1VHmWOLIPY1ETkivHbtLVMMbY2yNYAT3LUc1vPSMoiwdTwSHx4c1vwWs2V9FUB9M4sIwdu1EVoh2ixwRw2mlEY064w92O1zhknz3W8ea+IumeOLL2iIilAiIg//9k="
+                  alt="Testimonial"
+                  class="w-[100px] h-[100px] rounded-full"
+                />
+              </div>
+              <h3 class="text-xl font-semibold text-center mb-2">John Doe</h3>
+              <p class="text-gray-600 text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse
+                cillum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50 py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Book Your Dream House
+        </h2>
+        <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+          <div class="mb-6">
+            <label for="name" class="block text-gray-700 font-bold mb-2"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+          <div class="mb-6">
+            <label for="email" class="block text-gray-700 font-bold mb-2"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+          <div class="mb-6">
+            <label for="phone" class="block text-gray-700 font-bold mb-2"
+              >Phone Number</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+          <div class="mb-6">
+            <label for="date" class="block text-gray-700 font-bold mb-2"
+              >Preferred Date</label
+            >
+            <input
+              type="date"
+              id="date"
+              name="date"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+          <div class="mb-6">
+            <label for="message" class="block text-gray-700 font-bold mb-2"
+              >Additional Comments</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            ></textarea>
+          </div>
+          <div class="text-center">
+            <button
+              type="submit"
+              class="bg-green-200 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-900 hover:text-white transition duration-300"
+            >
+              Book Now
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-2xl font-bold mb-4">Dream Houses</h3>
+            <p class="text-sm">
+              Find your perfect home with us. We offer a wide range of
+              properties to suit every need and budget.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="hover:text-gray-300 transition duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300 transition duration-300"
+                  >Properties</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300 transition duration-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-gray-300 transition duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                123 Dream Street, City, Country
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                  ></path>
+                </svg>
+                +1 234 567 890
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  ></path>
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  ></path>
+                </svg>
+                info@dreamhouses.com
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-white hover:text-gray-300 transition duration-300"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-white hover:text-gray-300 transition duration-300"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-white hover:text-gray-300 transition duration-300"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-white hover:text-gray-300 transition duration-300"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
+          <p>&copy; 2023 Dream Houses. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const mobileMenuButton = document.querySelector(".mobile-menu-button");
+      const mobileMenu = document.querySelector(".mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
